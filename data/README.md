@@ -1,30 +1,34 @@
 # SmartShelf Vision Dataset
 
-This folder documents the data sources planned for the SmartShelf Vision team project.
+This folder documents the data source planned for the SmartShelf Vision team project.
 
-## Planned Data Sources
+## Primary Data Source
 
-The team will investigate publicly available retail shelf datasets, including:
+The team plans to use the **SKU 110K** dataset for retail shelf object detection.
 
-- SKU 110K
-- RP2K
-- Kaggle retail shelf datasets
-- Roboflow public datasets
+**Dataset source:**  
+https://github.com/eg4000/SKU110K_CVPR19
+
+The SKU 110K dataset contains retail shelf images with bounding box annotations for object detection. It is suitable for testing product detection and counting in densely packed retail shelf scenes.
 
 ## Data Requirements
 
-The selected dataset should provide:
+The selected data should provide:
 
 - Retail shelf images
 - Object annotations
 - Bounding boxes
 - Product or object category information when available
 
-The target dataset size is approximately 1,000 or more images or image samples for development and evaluation.
+The team plans to use approximately **1,000 or more images** from the dataset for development and evaluation.
+
+## Labels
+
+SKU 110K primarily provides bounding box annotations for visible products. The project will use these annotations to evaluate product detection and counting.
 
 ## Data Selection Criteria
 
-The team will select the final dataset based on:
+The dataset was selected based on:
 
 1. Availability and accessibility
 2. Annotation quality
@@ -32,6 +36,6 @@ The team will select the final dataset based on:
 4. Number of usable images
 5. Relevance to retail shelf inventory detection
 
-The team will first use a small number of sample images to verify that the pretrained YOLOv8 pipeline works before processing the larger dataset.
+The team will first test the pretrained YOLOv8 model on a small number of sample images before processing the larger dataset.
 
-The selected dataset will be used for computer vision development and evaluation.
+The selected data will be used for computer vision development and evaluation.
